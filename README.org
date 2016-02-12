@@ -11,7 +11,7 @@ To get rpm builds go on this folder : ./rpmbuild/RPMS
 ./run.sh openssl-1.x
 #+END_SRC bash
 
-*On server other Centos 5 server not so far away*
+*On other Centos 5 server not so far away*
 
 #+BEGIN_SRC bash
 rpm -i --relocate=/=/usr/local/ssl openssl1-1.0.1e-42.9.x86_64.rpm openssl1-libs-1.0.1e-42.9.x86_64.rpm openssl1-devel-1.0.1e-42.9.x86_64.rpm
