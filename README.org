@@ -1,6 +1,8 @@
 * CentOS build machine
 Usage: ./run.sh <buildname>-<version>
 
+To get rpm builds go ton this folder : ./rpmbuild/RPMS
+
 ** To build openssl 1.x for centos 5
 
 (as docker user...)
