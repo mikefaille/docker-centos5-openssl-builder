@@ -1,0 +1,10 @@
+* CentOS build machine
+Usage: ./run.sh <buildname>-<version>
+
+** To build openssl 1.x for centos 5
+./run.sh openssl-1.x
+
+> On server other Centos 5 server not so far away
+rpm -i --relocate=/=/usr/local/ssl openssl1-1.0.1e-42.9.x86_64.rpm openssl1-libs-1.0.1e-42.9.x86_64.rpm openssl1-devel-1.0.1e-42.9.x86_64.rpm
+echo /usr/local/ssl/usr/lib64/ | sudo tee /etc/ld.so.conf.d/openssl1.conf
+ldconfig -v
